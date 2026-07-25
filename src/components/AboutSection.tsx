@@ -37,7 +37,7 @@ export default function AboutSection({ settings }: AboutProps) {
             Our Story & Legacy
           </span>
           <h2 className="text-3xl sm:text-5xl font-serif text-white tracking-widest mt-2 uppercase">
-            About Royal Vista
+            About Royal Vista Studio
           </h2>
           <div className="w-12 h-[1px] bg-amber-500 mx-auto mt-4" />
         </div>
