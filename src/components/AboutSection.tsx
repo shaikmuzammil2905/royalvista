@@ -41,19 +41,19 @@ export default function AboutSection({ settings }: AboutProps) {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative bg-gradient-to-br from-neutral-950 via-neutral-900/40 to-neutral-950 border border-neutral-900 rounded-3xl p-8 sm:p-12 overflow-hidden h-full flex flex-col justify-center"
+            className="relative bg-gradient-to-br from-neutral-950 via-neutral-900/40 to-neutral-950 border border-neutral-900 rounded-3xl p-5 sm:p-8 lg:p-12 overflow-hidden h-full flex flex-col justify-center"
           >
             <div className="absolute top-0 right-0 w-[200px] h-[200px] bg-amber-500/5 rounded-full blur-[60px] pointer-events-none" />
-            <span className="text-xs uppercase tracking-[0.25em] text-amber-500 font-semibold font-sans mb-3 block">
+            <span className="text-[9px] sm:text-xs uppercase tracking-[0.25em] text-amber-500 font-semibold font-sans mb-2 block">
               Our Brand Promise
             </span>
-            <h3 className="text-2xl sm:text-3xl font-serif text-white tracking-wider mb-6 uppercase">
+            <h3 className="text-lg sm:text-2xl lg:text-3xl font-serif text-white tracking-wider mb-4 sm:mb-6 uppercase">
               Visual Masterpieces Built to Last
             </h3>
-            <p className="text-xs sm:text-sm md:text-base text-neutral-300 leading-relaxed italic font-serif font-light mb-6">
+            <p className="text-[11px] sm:text-sm lg:text-base text-neutral-300 leading-relaxed italic font-serif font-light mb-4 sm:mb-6">
               "{settings.brandPromise}"
             </p>
-            <p className="text-[11px] sm:text-xs text-neutral-400 leading-relaxed font-sans font-normal border-t border-neutral-900 pt-5">
+            <p className="text-[10px] sm:text-xs lg:text-sm text-neutral-400 leading-relaxed font-sans font-light border-t border-neutral-900 pt-4 sm:pt-5">
               Royal Vista Studio features a state-of-the-art production space equipped with the latest cinema setups, editing consoles, and color-grading hardware to translate your creative concepts into high-fidelity reality.
             </p>
           </motion.div>
