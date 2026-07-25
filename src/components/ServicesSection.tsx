@@ -64,17 +64,17 @@ export default function ServicesSection({ services }: ServicesProps) {
                 </h3>
 
                 {/* Service Description */}
-                <p className="text-neutral-500 text-xs sm:text-sm leading-relaxed mb-6 font-sans font-light">
+                <p className="text-neutral-300 text-sm sm:text-base leading-relaxed mb-6 font-sans font-normal">
                   {svc.description}
                 </p>
               </div>
 
               {/* Service details lists */}
               <div className="border-t border-neutral-900 pt-5 mt-4">
-                <ul className="grid grid-cols-2 gap-2 text-[10px] sm:text-xs text-neutral-600 font-sans group-hover:text-neutral-400 transition-colors">
+                <ul className="grid grid-cols-2 gap-2 text-xs sm:text-sm text-neutral-400 font-sans group-hover:text-neutral-300 transition-colors">
                   {svc.details && svc.details.map((detail, idx) => (
-                    <li key={idx} className="flex items-center gap-1.5 font-light">
-                      <span className="w-1 h-1 rounded-full bg-amber-500/40 shrink-0" />
+                    <li key={idx} className="flex items-center gap-1.5 font-normal">
+                      <span className="w-1 h-1 rounded-full bg-amber-500/60 shrink-0" />
                       <span>{detail}</span>
                     </li>
                   ))}

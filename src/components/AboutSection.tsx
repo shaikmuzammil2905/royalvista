@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Eye, Target, Compass, Award, Shield, Cpu, Users, Star, Flame, RefreshCw, Zap } from 'lucide-react';
 import { Settings } from '@/lib/data';
 
@@ -49,7 +50,7 @@ export default function AboutSection({ settings }: AboutProps) {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
-            className="group relative bg-neutral-950/40 border border-neutral-900 hover:border-amber-500/30 p-8 sm:p-12 rounded-2xl transition-all duration-500 flex flex-col items-center text-center backdrop-blur-sm"
+            className="group relative bg-neutral-950/40 border border-neutral-900 hover:border-amber-500/30 p-8 sm:p-12 rounded-2xl transition-all duration-500 flex flex-col items-start text-left backdrop-blur-sm"
           >
             <div className="w-14 h-14 rounded-full bg-neutral-900 border border-amber-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300">
               <Eye size={24} className="text-amber-400" />
@@ -57,7 +58,7 @@ export default function AboutSection({ settings }: AboutProps) {
             <h3 className="text-xl sm:text-2xl font-serif text-white tracking-wider mb-4 uppercase">
               Our Vision
             </h3>
-            <p className="text-sm text-neutral-400 leading-relaxed max-w-md font-sans font-light">
+            <p className="text-sm sm:text-base text-neutral-250 leading-relaxed max-w-md font-sans font-normal">
               {settings.vision}
             </p>
           </motion.div>
@@ -68,7 +69,7 @@ export default function AboutSection({ settings }: AboutProps) {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
-            className="group relative bg-neutral-950/40 border border-neutral-900 hover:border-amber-500/30 p-8 sm:p-12 rounded-2xl transition-all duration-500 flex flex-col items-center text-center backdrop-blur-sm"
+            className="group relative bg-neutral-950/40 border border-neutral-900 hover:border-amber-500/30 p-8 sm:p-12 rounded-2xl transition-all duration-500 flex flex-col items-start text-left backdrop-blur-sm"
           >
             <div className="w-14 h-14 rounded-full bg-neutral-900 border border-amber-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300">
               <Target size={24} className="text-amber-400" />
@@ -76,33 +77,59 @@ export default function AboutSection({ settings }: AboutProps) {
             <h3 className="text-xl sm:text-2xl font-serif text-white tracking-wider mb-4 uppercase">
               Our Mission
             </h3>
-            <p className="text-sm text-neutral-400 leading-relaxed max-w-md font-sans font-light">
+            <p className="text-sm sm:text-base text-neutral-250 leading-relaxed max-w-md font-sans font-normal">
               {settings.mission}
             </p>
           </motion.div>
         </div>
 
-        {/* Brand Promise Banner */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="relative bg-gradient-to-r from-neutral-950 via-neutral-900/80 to-neutral-950 border border-neutral-900 rounded-3xl p-8 sm:p-12 mb-24 overflow-hidden text-center"
-        >
-          {/* subtle gold ambient shine */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[100px] bg-amber-500/10 rounded-full blur-[80px]" />
-          
-          <span className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-amber-500 font-semibold font-sans mb-3 block">
-            Our Brand Promise
-          </span>
-          <h3 className="text-2xl sm:text-3xl font-serif text-white tracking-wider mb-6 uppercase">
-            Visual Masterpieces Built to Last
-          </h3>
-          <p className="text-sm sm:text-base text-neutral-300 leading-relaxed max-w-3xl mx-auto italic font-serif font-light">
-            "{settings.brandPromise}"
-          </p>
-        </motion.div>
+        {/* Brand Promise & Studio Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 mb-24 items-center">
+          {/* Left: Text Content */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative bg-gradient-to-br from-neutral-950 via-neutral-900/40 to-neutral-950 border border-neutral-900 rounded-3xl p-8 sm:p-12 overflow-hidden h-full flex flex-col justify-center"
+          >
+            <div className="absolute top-0 right-0 w-[200px] h-[200px] bg-amber-500/5 rounded-full blur-[60px] pointer-events-none" />
+            <span className="text-xs uppercase tracking-[0.25em] text-amber-500 font-semibold font-sans mb-3 block">
+              Our Brand Promise
+            </span>
+            <h3 className="text-2xl sm:text-3xl font-serif text-white tracking-wider mb-6 uppercase">
+              Visual Masterpieces Built to Last
+            </h3>
+            <p className="text-sm sm:text-base text-neutral-300 leading-relaxed italic font-serif font-light mb-6">
+              "{settings.brandPromise}"
+            </p>
+            <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed font-sans font-normal border-t border-neutral-900 pt-5">
+              Royal Vista Studio features a state-of-the-art production space equipped with the latest cinema setups, editing consoles, and color-grading hardware to translate your creative concepts into high-fidelity reality.
+            </p>
+          </motion.div>
+
+          {/* Right: Studio Image Frame */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden border border-neutral-900 shadow-[0_20px_40px_rgba(0,0,0,0.6)] group bg-neutral-950 min-h-[250px] sm:min-h-[350px]"
+          >
+            <Image
+              src="/assets/studio.png"
+              alt="Our Creative Studio Space"
+              fill
+              className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            />
+            {/* Ambient vignette and overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90 pointer-events-none" />
+            <div className="absolute bottom-6 left-8 pointer-events-none">
+              <span className="text-[10px] uppercase tracking-widest text-amber-500 font-semibold block">The Workspace</span>
+              <h4 className="text-white text-base font-serif uppercase tracking-wider mt-1">Royal Vista Studio Space</h4>
+            </div>
+          </motion.div>
+        </div>
 
         {/* Why Choose Us & Core Values */}
         <div>
@@ -132,10 +159,10 @@ export default function AboutSection({ settings }: AboutProps) {
                   {iconMap[value] || <Award size={20} className="text-amber-400" />}
                 </div>
                 <div>
-                  <h4 className="text-white text-sm font-medium font-serif uppercase tracking-wider group-hover:text-amber-400 transition-colors">
+                  <h4 className="text-white text-base font-semibold font-serif uppercase tracking-wider group-hover:text-amber-400 transition-colors">
                     {value}
                   </h4>
-                  <p className="text-neutral-500 text-xs mt-0.5 leading-relaxed font-sans font-light">
+                  <p className="text-neutral-300 text-sm mt-1 leading-relaxed font-sans font-normal">
                     Exquisite craftsmanship delivered with precision and honesty.
                   </p>
                 </div>

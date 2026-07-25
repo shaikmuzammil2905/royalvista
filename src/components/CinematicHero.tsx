@@ -154,7 +154,7 @@ export default function CinematicHero({ tagline, phone }: HeroProps) {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-left flex flex-col items-start md:text-center md:items-center w-full">
         {/* Experience badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -169,7 +169,7 @@ export default function CinematicHero({ tagline, phone }: HeroProps) {
         </motion.div>
 
         {/* Title */}
-        <h1 className="text-4xl sm:text-6xl md:text-8xl font-serif text-white tracking-[0.2em] font-light leading-none mb-6">
+        <h1 className="text-3xl sm:text-6xl md:text-8xl font-serif text-white tracking-[0.15em] sm:tracking-[0.2em] font-light leading-tight sm:leading-none mb-6 text-left md:text-center">
           {titleWords.map((word, i) => (
             <motion.span
               key={i}
@@ -194,7 +194,7 @@ export default function CinematicHero({ tagline, phone }: HeroProps) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, delay: 1.2 }}
-          className="text-neutral-400 text-sm sm:text-lg md:text-xl font-sans tracking-[0.15em] max-w-2xl mb-10 font-light"
+          className="text-neutral-300 text-xs sm:text-lg md:text-xl font-sans tracking-[0.1em] sm:tracking-[0.15em] max-w-2xl mb-10 font-normal leading-relaxed text-left md:text-center"
         >
           {tagline}
         </motion.p>
@@ -204,7 +204,7 @@ export default function CinematicHero({ tagline, phone }: HeroProps) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.4 }}
-          className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto"
+          className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto"
         >
           <button
             onClick={handleScrollToContact}
@@ -221,6 +221,45 @@ export default function CinematicHero({ tagline, phone }: HeroProps) {
             <span>Explore Works</span>
           </button>
         </motion.div>
+
+        {/* Mobile Stats - visible only on mobile, left aligned */}
+        <div className="grid grid-cols-2 gap-4 mt-12 md:hidden w-full max-w-md">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.6 }}
+            className="bg-neutral-950/60 backdrop-blur-md border border-neutral-900 p-4 rounded-xl text-left"
+          >
+            <TypewriterStatMini text="150+" label="Projects Delivered" delay={1.8} />
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.7 }}
+            className="bg-neutral-950/60 backdrop-blur-md border border-neutral-900 p-4 rounded-xl text-left"
+          >
+            <TypewriterStatMini text="100+" label="Clients Worldwide" delay={2.1} />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.8 }}
+            className="bg-neutral-950/60 backdrop-blur-md border border-neutral-900 p-4 rounded-xl text-left"
+          >
+            <TypewriterStatMini text="98%" label="Client Satisfaction" delay={2.4} />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.9 }}
+            className="bg-neutral-950/60 backdrop-blur-md border border-neutral-900 p-4 rounded-xl text-left"
+          >
+            <TypewriterStatMini text="5+" label="Years Excellence" delay={2.7} />
+          </motion.div>
+        </div>
       </div>
 
       {/* Mouse scroll down animation */}

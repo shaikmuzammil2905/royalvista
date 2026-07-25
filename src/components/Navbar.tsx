@@ -37,25 +37,20 @@ export default function Navbar({ phone, whatsapp }: NavbarProps) {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-neutral-900 py-3.5 shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-10 h-10 overflow-hidden rounded bg-neutral-950 flex items-center justify-center border border-amber-500/30 group-hover:border-amber-500/80 transition-all">
+        <Link href="/" className="flex items-center gap-3 md:gap-4 group">
+          <div className="relative w-12 h-12 md:w-15 md:h-15 overflow-hidden rounded-lg bg-neutral-950 flex items-center justify-center border border-amber-500/30 group-hover:border-amber-500/80 transition-all shadow-[0_0_15px_rgba(245,158,11,0.1)]">
             <Image
               src="/assets/logo.png"
               alt="Royal Vista Logo"
               fill
-              className="object-contain p-1 scale-110 group-hover:scale-125 transition-transform duration-500"
-              onError={(e) => {
-                (e.target as HTMLElement).style.display = 'none';
-              }}
+              className="object-contain p-1 scale-110 group-hover:scale-125 transition-transform duration-500 z-10"
             />
-            <span className="text-amber-400 font-bold text-lg leading-none tracking-wider select-none font-serif">R</span>
           </div>
           <div className="flex flex-col">
-            <span className="text-white text-base tracking-[0.2em] font-medium font-serif group-hover:text-amber-400 transition-colors">
+            <span className="text-white text-base md:text-lg tracking-[0.25em] font-semibold font-serif group-hover:text-amber-400 transition-colors">
               ROYAL VISTA
             </span>
-            <span className="text-neutral-500 text-[9px] tracking-[0.3em] font-sans -mt-0.5 uppercase">
+            <span className="text-neutral-500 text-[9px] md:text-[10px] tracking-[0.35em] font-sans -mt-0.5 uppercase">
               STUDIO
             </span>
           </div>

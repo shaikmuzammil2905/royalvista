@@ -95,7 +95,7 @@ export default function FAQAccordion({ faqs }: FAQProps) {
                       transition={{ duration: 0.3, ease: 'easeInOut' }}
                       className="overflow-hidden"
                     >
-                      <div className="px-6 pb-6 pt-1 text-xs sm:text-sm text-neutral-400 leading-relaxed font-sans border-t border-neutral-900/40 font-light">
+                      <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-neutral-250 leading-relaxed font-sans border-t border-neutral-900/40 font-normal">
                         {faq.answer}
                       </div>
                     </motion.div>

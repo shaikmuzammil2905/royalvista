@@ -6,8 +6,12 @@ import { motion, useInView } from 'framer-motion';
 // Separate typing count helper component
 function TypewriterStat({ text, label }: { text: string; label: string }) {
   const [typedText, setTypedText] = useState('');
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   useEffect(() => {
+    if (!isInView) return;
+
     let index = 0;
     const interval = setInterval(() => {
       setTypedText(text.slice(0, index + 1));
@@ -18,17 +22,17 @@ function TypewriterStat({ text, label }: { text: string; label: string }) {
     }, 150); // type a character every 150ms
 
     return () => clearInterval(interval);
-  }, [text]);
+  }, [text, isInView]);
 
   return (
-    <div className="flex flex-col items-center p-6 bg-neutral-950/40 border border-neutral-900 rounded-2xl">
+    <div ref={ref} className="flex flex-col items-center p-6 bg-neutral-950/40 border border-neutral-900 rounded-2xl">
       <div className="text-3xl sm:text-5xl font-bold font-serif text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-300 flex items-center min-h-[40px] sm:min-h-[50px] md:min-h-[60px]">
         <span>{typedText}</span>
         {typedText.length < text.length && (
           <span className="w-1.5 h-6 sm:h-9 bg-amber-400 ml-1 animate-pulse" />
         )}
       </div>
-      <div className="text-neutral-500 text-[10px] sm:text-xs uppercase tracking-[0.2em] font-medium mt-3 text-center">
+      <div className="text-neutral-300 text-[10px] sm:text-xs uppercase tracking-[0.2em] font-medium mt-3 text-center">
         {label}
       </div>
     </div>

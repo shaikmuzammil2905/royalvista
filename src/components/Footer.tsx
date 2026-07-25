@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
 
 interface FooterProps {
@@ -41,12 +42,17 @@ export default function Footer({ businessName, tagline, phone, email }: FooterPr
         {/* Brand Section */}
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded bg-neutral-950 flex items-center justify-center border border-amber-500/30">
-              <span className="text-amber-400 font-bold text-sm font-serif">R</span>
+            <div className="relative w-12 h-12 rounded-lg bg-neutral-950 flex items-center justify-center border border-amber-500/30 shadow-[0_0_10px_rgba(245,158,11,0.1)] overflow-hidden">
+              <Image
+                src="/assets/logo.png"
+                alt="Royal Vista Logo"
+                fill
+                className="object-contain p-1"
+              />
             </div>
             <div className="flex flex-col">
-              <span className="text-white text-sm tracking-[0.2em] font-medium font-serif">{businessName}</span>
-              <span className="text-neutral-500 text-[8px] tracking-[0.3em] -mt-0.5">STUDIO</span>
+              <span className="text-white text-base tracking-[0.2em] font-medium font-serif">{businessName}</span>
+              <span className="text-neutral-500 text-[9px] tracking-[0.3em] -mt-0.5">STUDIO</span>
             </div>
           </div>
           <p className="text-sm leading-relaxed text-neutral-500 italic">
@@ -54,7 +60,7 @@ export default function Footer({ businessName, tagline, phone, email }: FooterPr
           </p>
           <div className="flex gap-4">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/?hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-neutral-950 flex items-center justify-center border border-neutral-900 text-neutral-500 hover:text-amber-400 hover:border-amber-500/50 transition-all duration-300"
@@ -140,8 +146,8 @@ export default function Footer({ businessName, tagline, phone, email }: FooterPr
             </li>
             <li className="flex items-start gap-3">
               <MapPin size={14} className="text-amber-500 shrink-0 mt-1" />
-              <span className="text-neutral-500">
-                Hubli-Dharwad, Karnataka, India
+              <span className="text-neutral-300 font-normal">
+                Bangalore Karnataka 560094
               </span>
             </li>
           </ul>

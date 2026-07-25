@@ -95,8 +95,8 @@ export default function ContactSection({ services, phone, whatsapp, email }: Con
                     <MapPin size={16} />
                   </div>
                   <div>
-                    <span className="text-neutral-600 text-[9px] uppercase tracking-widest block font-medium">Location</span>
-                    <span className="text-white text-sm font-sans font-medium">Hubli-Dharwad, Karnataka, India</span>
+                    <span className="text-neutral-650 text-[9px] uppercase tracking-widest block font-semibold text-amber-500/80">Location</span>
+                    <span className="text-white text-sm font-sans font-medium">Bangalore Karnataka 560094</span>
                   </div>
                 </div>
               </div>
@@ -106,7 +106,7 @@ export default function ContactSection({ services, phone, whatsapp, email }: Con
             <div className="h-44 sm:h-52 w-full rounded-2xl overflow-hidden border border-neutral-900 relative">
               <iframe
                 title="Google Maps Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123048.24357771783!2d74.96024823292437!3d15.461942426989445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8ad0d8b5b5c11%3A0x6b8bc228c2ff6438!2sHubli%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.054378772591!2d77.57218637507963!3d13.032223887289568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae179e3e7f41a9%3A0xe10834f8286f0a3c!2sSanjay+Nagar%2C+Bengaluru%2C+Karnataka+560094!5e0!3m2!1sen!2sin!4v1721915000000!5m2!1sen!2sin"
                 className="w-full h-full border-0 filter grayscale invert contrast-[1.25]"
                 loading="lazy"
                 allowFullScreen

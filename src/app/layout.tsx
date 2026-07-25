@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollProgress from "@/components/ScrollProgress";
 import FloatingControls from "@/components/FloatingControls";
+import Preloader from "@/components/Preloader";
 
 const playfair = Playfair_Display({
   variable: "--font-serif",
@@ -69,8 +70,9 @@ export default async function RootLayout({
     "email": "royalvistastudio@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Hubli-Dharwad",
+      "addressLocality": "Bangalore",
       "addressRegion": "Karnataka",
+      "postalCode": "560094",
       "addressCountry": "IN"
     },
     "description": "To become India's most trusted premium creative studio, recognized for delivering world-class photography, cinematography, video editing, branding, and digital experiences.",
@@ -90,6 +92,7 @@ export default async function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-black text-white selection:bg-amber-400 selection:text-black">
+        <Preloader />
         <ScrollProgress />
         <Navbar phone={settings.phone} whatsapp={settings.whatsapp} />
         

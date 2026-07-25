@@ -48,6 +48,7 @@ export default function BlogSection({ blogs }: BlogProps) {
                   src={blog.image}
                   alt={blog.title}
                   fill
+                  unoptimized
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-80" />
@@ -57,7 +58,7 @@ export default function BlogSection({ blogs }: BlogProps) {
               <div className="p-8 flex flex-col justify-between flex-grow">
                 <div>
                   {/* Meta items */}
-                  <div className="flex items-center gap-4 text-neutral-600 text-[10px] uppercase tracking-widest mb-4">
+                  <div className="flex items-center gap-4 text-neutral-400 text-[11px] uppercase tracking-widest mb-4">
                     <span className="flex items-center gap-1.5">
                       <Calendar size={12} className="text-amber-500/80" />
                       <span>{blog.date}</span>
@@ -68,11 +69,11 @@ export default function BlogSection({ blogs }: BlogProps) {
                     </span>
                   </div>
 
-                  <h3 className="text-white text-base sm:text-lg font-serif uppercase tracking-wider mb-3 leading-snug group-hover:text-amber-400 transition-colors">
+                  <h3 className="text-white text-base sm:text-xl font-serif uppercase tracking-wider mb-3 leading-snug group-hover:text-amber-400 transition-colors">
                     {blog.title}
                   </h3>
                   
-                  <p className="text-neutral-500 text-xs sm:text-sm leading-relaxed mb-6 font-sans font-light">
+                  <p className="text-neutral-300 text-sm sm:text-base leading-relaxed mb-6 font-sans font-normal">
                     {blog.excerpt}
                   </p>
                 </div>
@@ -119,6 +120,7 @@ export default function BlogSection({ blogs }: BlogProps) {
                     src={selectedBlog.image}
                     alt={selectedBlog.title}
                     fill
+                    unoptimized
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 to-transparent" />

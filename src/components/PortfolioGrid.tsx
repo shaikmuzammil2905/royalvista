@@ -87,6 +87,7 @@ export default function PortfolioGrid({ portfolio }: PortfolioProps) {
                   src={item.thumbnailUrl}
                   alt={item.title}
                   fill
+                  unoptimized
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                 />
 
@@ -145,8 +146,10 @@ export default function PortfolioGrid({ portfolio }: PortfolioProps) {
                   {selectedItem.mediaType === 'video' ? (
                     <video
                       src={selectedItem.mediaUrl}
+                      poster={selectedItem.thumbnailUrl}
                       controls
                       autoPlay
+                      playsInline
                       className="w-full h-full object-contain"
                     />
                   ) : (
@@ -154,6 +157,7 @@ export default function PortfolioGrid({ portfolio }: PortfolioProps) {
                       src={selectedItem.mediaUrl}
                       alt={selectedItem.title}
                       fill
+                      unoptimized
                       className="object-contain"
                     />
                   )}
