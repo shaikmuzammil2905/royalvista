@@ -32,55 +32,14 @@ export default function AboutSection({ settings }: AboutProps) {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Section Heading */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-16">
           <span className="text-xs uppercase tracking-[0.3em] text-amber-500 font-medium font-sans">
-            Our Story & Legacy
+            Our Commitment
           </span>
           <h2 className="text-3xl sm:text-5xl font-serif text-white tracking-widest mt-2 uppercase">
-            About Royal Vista Studio
+            Our Brand Promise
           </h2>
           <div className="w-12 h-[1px] bg-amber-500 mx-auto mt-4" />
-        </div>
-
-        {/* Vision & Mission */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
-          {/* Vision */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
-            className="group relative bg-neutral-950/40 border border-neutral-900 hover:border-amber-500/30 p-8 sm:p-12 rounded-2xl transition-all duration-500 flex flex-col items-start text-left backdrop-blur-sm"
-          >
-            <div className="w-14 h-14 rounded-full bg-neutral-900 border border-amber-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300">
-              <Eye size={24} className="text-amber-400" />
-            </div>
-            <h3 className="text-xl sm:text-2xl font-serif text-white tracking-wider mb-4 uppercase">
-              Our Vision
-            </h3>
-            <p className="text-sm sm:text-base text-neutral-250 leading-relaxed max-w-md font-sans font-normal">
-              {settings.vision}
-            </p>
-          </motion.div>
-
-          {/* Mission */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
-            className="group relative bg-neutral-950/40 border border-neutral-900 hover:border-amber-500/30 p-8 sm:p-12 rounded-2xl transition-all duration-500 flex flex-col items-start text-left backdrop-blur-sm"
-          >
-            <div className="w-14 h-14 rounded-full bg-neutral-900 border border-amber-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300">
-              <Target size={24} className="text-amber-400" />
-            </div>
-            <h3 className="text-xl sm:text-2xl font-serif text-white tracking-wider mb-4 uppercase">
-              Our Mission
-            </h3>
-            <p className="text-sm sm:text-base text-neutral-250 leading-relaxed max-w-md font-sans font-normal">
-              {settings.mission}
-            </p>
-          </motion.div>
         </div>
 
         {/* Brand Promise & Studio Section */}
