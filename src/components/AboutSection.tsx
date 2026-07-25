@@ -85,13 +85,13 @@ export default function AboutSection({ settings }: AboutProps) {
         {/* Why Choose Us & Core Values */}
         <div>
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-[0.3em] text-neutral-500 font-sans">
+            <span className="text-xs uppercase tracking-[0.3em] text-amber-500 font-semibold font-sans block">
               Our Foundations
             </span>
             <h3 className="text-2xl sm:text-3xl font-serif text-white tracking-widest mt-2 uppercase">
               Core Values
             </h3>
-            <p className="text-xs text-neutral-500 mt-2 max-w-sm mx-auto">
+            <p className="text-xs text-neutral-400 mt-2 max-w-sm mx-auto font-sans font-light">
               Nine rules of excellence that govern everything we create at Royal Vista Studio.
             </p>
           </div>
@@ -104,9 +104,9 @@ export default function AboutSection({ settings }: AboutProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="group p-6 bg-neutral-950/20 border border-neutral-900 hover:border-amber-500/20 hover:bg-neutral-950/60 rounded-xl transition-all duration-300 flex items-center gap-4"
+                className="group p-6 bg-neutral-950/20 border border-neutral-900 hover:border-amber-500/20 hover:bg-neutral-950/60 rounded-xl transition-all duration-300 flex items-start gap-4"
               >
-                <div className="w-10 h-10 rounded-lg bg-neutral-900/60 border border-neutral-800 flex items-center justify-center group-hover:bg-amber-500/10 group-hover:border-amber-500/30 transition-all duration-300 shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-neutral-900/60 border border-neutral-800 flex items-center justify-center group-hover:bg-amber-500/10 group-hover:border-amber-500/30 transition-all duration-300 shrink-0 mt-0.5">
                   {iconMap[value] || <Award size={20} className="text-amber-400" />}
                 </div>
                 <div>

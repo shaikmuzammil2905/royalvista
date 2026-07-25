@@ -84,7 +84,7 @@ export default function Footer({ businessName, tagline, phone, email }: FooterPr
               </svg>
             </a>
             <a
-              href="https://youtube.com"
+              href="https://www.youtube.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-neutral-950 flex items-center justify-center border border-neutral-900 text-neutral-500 hover:text-amber-400 hover:border-amber-500/50 transition-all duration-300"
