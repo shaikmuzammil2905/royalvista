@@ -1,0 +1,369 @@
+{
+  "settings": {
+    "businessName": "Royal Vista Studio",
+    "tagline": "Crafting Timeless Stories. Creating Lasting Impressions.",
+    "experience": "4+ Years",
+    "website": "https://www.royalvistastudio.in/",
+    "phone": "9448275947",
+    "whatsapp": "9448275947",
+    "email": "royalvistastudio@gmail.com",
+    "vision": "To become India's most trusted premium creative studio, recognized for delivering world-class photography, cinematography, AI-powered visual storytelling, branding, and digital experiences that preserve life's most meaningful moments and elevate every brand with elegance, innovation, and excellence.",
+    "mission": "Create timeless visual masterpieces through creativity, cutting-edge technology, and exceptional craftsmanship while providing every client with a seamless, personalized, premium experience.",
+    "coreValues": [
+      "Excellence",
+      "Creativity",
+      "Innovation",
+      "Client First",
+      "Integrity",
+      "Quality Without Compromise",
+      "Passion",
+      "Commitment",
+      "Continuous Growth"
+    ],
+    "brandPromise": "Royal Vista Studio delivers luxury creative experiences that combine cinematic storytelling, innovative technology, and exceptional craftsmanship—creating visuals that inspire, connect, and stand the test of time."
+  },
+  "services": [
+    {
+      "id": "video-editing",
+      "title": "Video Editing",
+      "description": "High-end cinematic post-production turning raw footage into compelling narrative masterpieces.",
+      "iconName": "Video",
+      "details": [
+        "Multi-cam syncing",
+        "Pacing & rhythm adjustment",
+        "Sound design integration",
+        "Dynamic transitions"
+      ]
+    },
+    {
+      "id": "motion-graphics",
+      "title": "Motion Graphics",
+      "description": "Bespoke 2D/3D kinetic animations that bring static concepts to vibrant, moving life.",
+      "iconName": "Sparkles",
+      "details": [
+        "Title sequences",
+        "Infographic animation",
+        "Logo stings",
+        "UI walk-throughs"
+      ]
+    },
+    {
+      "id": "colour-grading",
+      "title": "Colour Grading",
+      "description": "Premium color correction and stylistic grading that defines the mood, tone, and cinematic vibe.",
+      "iconName": "Palette",
+      "details": [
+        "Shot matching",
+        "Lut creation",
+        "Mood setting",
+        "Skin tone correction"
+      ]
+    },
+    {
+      "id": "color-correction",
+      "title": "Color Correction",
+      "description": "Ensuring natural, uniform color accuracy across all camera sensors and lighting environments.",
+      "iconName": "Sliders",
+      "details": [
+        "White balance tuning",
+        "Exposure normalization",
+        "Contrast adjustment",
+        "Noise reduction"
+      ]
+    },
+    {
+      "id": "commercial-advertisements",
+      "title": "Commercial Advertisements",
+      "description": "High-impact visual commercials tailored to elevate brands and drive target conversions.",
+      "iconName": "Tv",
+      "details": [
+        "Brand storyboards",
+        "Product showcase",
+        "Call-to-actions",
+        "High fidelity exports"
+      ]
+    },
+    {
+      "id": "wedding-films",
+      "title": "Wedding Films",
+      "description": "Elegant, emotional, and timeless cinematic coverage preserving the magic of your special day.",
+      "iconName": "Heart",
+      "details": [
+        "Teaser packages",
+        "Feature-length films",
+        "Drone photography",
+        "Audio highlights"
+      ]
+    },
+    {
+      "id": "corporate-videos",
+      "title": "Corporate Videos",
+      "description": "Professional internal communications, brand showcases, and premium executive interviews.",
+      "iconName": "Briefcase",
+      "details": [
+        "Executive interviews",
+        "Office walkthroughs",
+        "Annual reports",
+        "Training material"
+      ]
+    },
+    {
+      "id": "social-media-reels",
+      "title": "Social Media Reels",
+      "description": "Snappy, high-retention vertical short-form videos optimized for Instagram and YouTube Shorts.",
+      "iconName": "Smartphone",
+      "details": [
+        "Hook optimization",
+        "Auto captions",
+        "Trending audio sync",
+        "Visual hooks"
+      ]
+    },
+    {
+      "id": "youtube-editing",
+      "title": "YouTube Editing",
+      "description": "Engaging edit styles that optimize click-through, viewer retention, and channel growth.",
+      "iconName": "Youtube",
+      "details": [
+        "Retention editing",
+        "Thumbnail layout support",
+        "Intro hooks",
+        "Pattern interrupts"
+      ]
+    },
+    {
+      "id": "documentaries",
+      "title": "Documentaries",
+      "description": "Intimate and visually raw storytelling focused on deep human stories and authentic themes.",
+      "iconName": "Film",
+      "details": [
+        "Story research",
+        "Interviews",
+        "B-roll integration",
+        "Archival footages"
+      ]
+    },
+    {
+      "id": "podcast-editing",
+      "title": "Podcast Editing",
+      "description": "Multicamera video switching, pristine audio denoising, and highly engaging social clips.",
+      "iconName": "Mic",
+      "details": [
+        "Audio cleanup",
+        "Dynamic switching",
+        "Highlight clips",
+        "Show notes support"
+      ]
+    },
+    {
+      "id": "visual-effects",
+      "title": "Visual Effects",
+      "description": "Seamless compositing, rotoscoping, and digital enhancements that bridge reality and imagination.",
+      "iconName": "Wand2",
+      "details": [
+        "Green screen removal",
+        "Clean plate painting",
+        "VFX integration",
+        "Object replacement"
+      ]
+    },
+    {
+      "id": "luxury-brand-content",
+      "title": "Luxury Brand Content",
+      "description": "Exquisite visual assets created specifically for high-end fashion, hospitality, and luxury brands.",
+      "iconName": "Crown",
+      "details": [
+        "Aesthetic cinematography",
+        "Premium styling",
+        "Ambient audio mapping",
+        "Slow-motion detail shots"
+      ]
+    },
+    {
+      "id": "premium-brochure-design",
+      "title": "Premium Brochure Design",
+      "description": "Stunning physical & digital layouts crafted to present your brand's services in a luxury print.",
+      "iconName": "FileText",
+      "details": [
+        "Typography curation",
+        "Grid layout alignment",
+        "High-res print files",
+        "Interactive PDF format"
+      ]
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "port-1",
+      "title": "The Golden Hour Wedding Film",
+      "category": "Weddings",
+      "mediaType": "video",
+      "mediaUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800",
+      "description": "A luxury wedding film capturing an exquisite palace celebration with cinematic grading and slow-motion storytelling.",
+      "client": "Ananya & Rahul",
+      "year": "2025"
+    },
+    {
+      "id": "port-2",
+      "title": "Eco Luxury Resort Showcase",
+      "category": "Brand Content",
+      "mediaType": "video",
+      "mediaUrl": "https://www.w3schools.com/html/movie.mp4",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=800",
+      "description": "Cinematic commercial detailing the architecture, wellness facilities, and surrounding nature of a luxury eco-retreat.",
+      "client": "Elysium Resorts",
+      "year": "2025"
+    },
+    {
+      "id": "port-3",
+      "title": "Urban Tech Smartwatch Promo",
+      "category": "Commercial Ads",
+      "mediaType": "image",
+      "mediaUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1200",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800",
+      "description": "Sleek studio product photography with gold details highlighting the craftsmanship and interface of a luxury smartwatch.",
+      "client": "Aura Tech",
+      "year": "2024"
+    },
+    {
+      "id": "port-4",
+      "title": "Chasing Horizons - Travel Doc",
+      "category": "Documentaries",
+      "mediaType": "video",
+      "mediaUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=800",
+      "description": "An intimate look into remote nomadic cultures, their traditions, and the majestic landscapes they call home.",
+      "client": "Heritage Channel",
+      "year": "2024"
+    },
+    {
+      "id": "port-5",
+      "title": "Elevated Minds Podcast Highlight",
+      "category": "Podcasts",
+      "mediaType": "video",
+      "mediaUrl": "https://www.w3schools.com/html/movie.mp4",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&q=80&w=800",
+      "description": "Multi-camera audio switched dialogue showcase clip emphasizing clarity, clean graphics, and pacing.",
+      "client": "Dr. Alistair Vance",
+      "year": "2025"
+    },
+    {
+      "id": "port-6",
+      "title": "Street Fashion Summer Campaign",
+      "category": "Reels",
+      "mediaType": "image",
+      "mediaUrl": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=1200",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=800",
+      "description": "Highly engaging, fast-paced street video campaign edited specifically for mobile vertical social platforms.",
+      "client": "Kora Boutique",
+      "year": "2025"
+    },
+    {
+      "id": "port-7",
+      "title": "Techno-Futurism YouTube Vlog",
+      "category": "YouTube",
+      "mediaType": "video",
+      "mediaUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1548345680-f5475ea5df84?auto=format&fit=crop&q=80&w=800",
+      "description": "High-retention editing style with graphic overlays, sound FX, and speed ramps for a top tech channel.",
+      "client": "TechPulse",
+      "year": "2025"
+    },
+    {
+      "id": "port-8",
+      "title": "Executive Leadership Summit",
+      "category": "Corporate",
+      "mediaType": "image",
+      "mediaUrl": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=1200",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=800",
+      "description": "Premium corporate keynote visual report, detailing panel discussions and dynamic b-roll for corporate branding.",
+      "client": "Infinity Corp",
+      "year": "2024"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "test-1",
+      "name": "Sanjana Mehta",
+      "role": "Marketing Director",
+      "company": "Elysium Hotels",
+      "rating": 5,
+      "review": "Royal Vista Studio exceeded all our expectations. The promotional video they crafted captured the luxury aesthetic of our brand perfectly. Truly world-class visual artists!"
+    },
+    {
+      "id": "test-2",
+      "name": "Kunal Kapoor",
+      "role": "Founder",
+      "company": "Bespoke Threads",
+      "rating": 5,
+      "review": "Working with them for our commercial ads was seamless. Their motion graphics and color grading added a cinematic depth that immediately set our campaign apart. Incredibly professional."
+    },
+    {
+      "id": "test-3",
+      "name": "Dr. Alistair Vance",
+      "role": "Podcast Host",
+      "company": "Elevated Minds",
+      "rating": 5,
+      "review": "Their podcast editing and reels delivery increased our social media engagement by 200%. The speed of delivery and exceptional quality is unmatched."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-1",
+      "question": "What is your standard turnaround time for a project?",
+      "answer": "Typically, social media reels and short commercial ads are delivered within 3-5 business days. Larger projects like corporate videos, documentaries, or full wedding films range from 2 to 4 weeks depending on the complexity of the editing and feedback cycles.",
+      "category": "General"
+    },
+    {
+      "id": "faq-2",
+      "question": "Do you offer sound design and color grading separately?",
+      "answer": "Yes, we offer individual color grading, color correction, sound design, and motion graphics services. You can select exactly the expertise your project requires.",
+      "category": "Services"
+    },
+    {
+      "id": "faq-3",
+      "question": "How do we collaborate on the editing revisions?",
+      "answer": "We use professional review platforms (like Frame.io) where you can leave timestamped comments directly on the video. This makes revisions precise, fast, and easy for both sides.",
+      "category": "Process"
+    },
+    {
+      "id": "faq-4",
+      "question": "Can you edit footage shot in log format (S-Log, C-Log, D-Log)?",
+      "answer": "Absolutely! We specialize in color-grading flat log profiles from all major camera brands (Sony, Canon, RED, ARRI, DJI) to deliver rich, luxury-grade final outputs.",
+      "category": "Technical"
+    }
+  ],
+  "blogs": [
+    {
+      "id": "blog-1",
+      "title": "The Art of Cinematic Color Grading: Setting the Emotional Tone",
+      "excerpt": "Discover how color grading defines the psychological atmosphere of film and how luxury brands use specific palettes to convey premium status.",
+      "content": "Color is the silent storyteller of cinema. It hits the viewer's subconscious long benefits they process the dialogue or the plot. In this article, we dive deep into the differences between color correction (making colors accurate) and color grading (making colors tell a story). We explore why high-end brands favor charcoal, gold, and muted pastel palettes to inspire prestige, trust, and luxury.",
+      "image": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=800",
+      "date": "July 12, 2026",
+      "readTime": "5 min read"
+    },
+    {
+      "id": "blog-2",
+      "title": "Unlocking Maximum Engagement: Editing for Social Media Reels",
+      "excerpt": "Learn the scientific hook methods and pattern interrupt pacing formulas that keep viewers watching past the critical 3-second mark.",
+      "content": "With attention spans shrinking to record lows, the first 3 seconds of your vertical reel determine its success. We walk through our studio's signature techniques: auto-caption animation styles, trending audio sync grids, dynamic zooming, and the 'pacing hook' that drives a 90%+ retention rate on Instagram and YouTube Shorts.",
+      "image": "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?auto=format&fit=crop&q=80&w=800",
+      "date": "June 28, 2026",
+      "readTime": "4 min read"
+    }
+  ],
+  "enquiries": [
+    {
+      "name": "Test User",
+      "email": "test@example.com",
+      "phone": "9448275947",
+      "service": "General Inquiry",
+      "message": "This is a test message to verify the form submission redirects to WhatsApp.",
+      "id": "enq-13jebgcas",
+      "date": "25 Jul 2026, 01:02 pm",
+      "status": "new"
+    }
+  ]
+}
