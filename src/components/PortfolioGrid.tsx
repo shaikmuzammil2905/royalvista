@@ -109,9 +109,6 @@ export default function PortfolioGrid({ portfolio }: PortfolioProps) {
                   <h3 className="text-white text-base font-serif tracking-wide mt-3 uppercase truncate">
                     {item.title}
                   </h3>
-                  <p className="text-neutral-400 text-[10px] uppercase tracking-widest mt-1">
-                    {item.client} • {item.year}
-                  </p>
                 </div>
               </motion.div>
             ))}
@@ -150,6 +147,7 @@ export default function PortfolioGrid({ portfolio }: PortfolioProps) {
                       controls
                       autoPlay
                       playsInline
+                      onCanPlay={(e) => e.currentTarget.play().catch(err => console.log("Video Autoplay Error:", err))}
                       className="w-full h-full object-contain"
                     />
                   ) : (
