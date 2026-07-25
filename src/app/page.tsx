@@ -12,8 +12,8 @@ export default async function Home() {
 
   const quickNav = [
     {
-      title: "The Legacy",
-      desc: "Discover our mission, core values, and creative brand promise.",
+      title: "Our Promise",
+      desc: "Explore our creative brand promise, values, and studio workspace.",
       href: "/about",
       icon: <Star size={20} className="text-amber-400" />
     },
