@@ -31,16 +31,7 @@ export default function AboutSection({ settings }: AboutProps) {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
-        {/* Section Heading */}
-        <div className="text-center mb-16">
-          <span className="text-xs uppercase tracking-[0.3em] text-amber-500 font-medium font-sans">
-            Our Commitment
-          </span>
-          <h2 className="text-3xl sm:text-5xl font-serif text-white tracking-widest mt-2 uppercase">
-            Our Brand Promise
-          </h2>
-          <div className="w-12 h-[1px] bg-amber-500 mx-auto mt-4" />
-        </div>
+
 
         {/* Brand Promise & Studio Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 mb-24 items-center">
