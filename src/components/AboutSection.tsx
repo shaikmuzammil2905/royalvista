@@ -53,9 +53,34 @@ export default function AboutSection({ settings }: AboutProps) {
             <p className="text-[11px] sm:text-sm lg:text-base text-neutral-300 leading-relaxed italic font-serif font-light mb-4 sm:mb-6">
               "{settings.brandPromise}"
             </p>
-            <p className="text-[10px] sm:text-xs lg:text-sm text-neutral-400 leading-relaxed font-sans font-light border-t border-neutral-900 pt-4 sm:pt-5">
-              Royal Vista Studio features a state-of-the-art production space equipped with the latest cinema setups, editing consoles, and color-grading hardware to translate your creative concepts into high-fidelity reality.
-            </p>
+            <motion.p
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={{
+                hidden: { opacity: 1 },
+                visible: {
+                  opacity: 1,
+                  transition: {
+                    staggerChildren: 0.01,
+                  },
+                },
+              }}
+              className="text-[10px] sm:text-xs lg:text-sm text-neutral-400 leading-relaxed font-sans font-light border-t border-neutral-900 pt-4 sm:pt-5"
+            >
+              {"Royal Vista Studio features a state-of-the-art production space equipped with the latest cinema setups, editing consoles, and color-grading hardware to translate your creative concepts into high-fidelity reality.".split("").map((char, index) => (
+                <motion.span
+                  key={index}
+                  variants={{
+                    hidden: { opacity: 0, y: 5 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                  transition={{ duration: 0.2 }}
+                >
+                  {char}
+                </motion.span>
+              ))}
+            </motion.p>
           </motion.div>
 
           {/* Right: Studio Image Frame */}
