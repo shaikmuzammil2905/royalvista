@@ -124,7 +124,7 @@ export default function ProcessTimeline() {
                     loop
                     muted
                     playsInline
-                    className="w-full h-full object-cover opacity-80"
+                    className="w-full h-full object-contain bg-neutral-950 opacity-90"
                   >
                     <source src={step.videoUrl} type="video/mp4" />
                   </video>
