@@ -100,10 +100,10 @@ export default function AboutSection({ settings }: AboutProps) {
             <h3 className="text-2xl sm:text-3xl font-serif text-white tracking-wider mb-6 uppercase">
               Visual Masterpieces Built to Last
             </h3>
-            <p className="text-sm sm:text-base text-neutral-300 leading-relaxed italic font-serif font-light mb-6">
+            <p className="text-xs sm:text-sm md:text-base text-neutral-300 leading-relaxed italic font-serif font-light mb-6">
               "{settings.brandPromise}"
             </p>
-            <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed font-sans font-normal border-t border-neutral-900 pt-5">
+            <p className="text-[11px] sm:text-xs text-neutral-400 leading-relaxed font-sans font-normal border-t border-neutral-900 pt-5">
               Royal Vista Studio features a state-of-the-art production space equipped with the latest cinema setups, editing consoles, and color-grading hardware to translate your creative concepts into high-fidelity reality.
             </p>
           </motion.div>
@@ -124,10 +124,10 @@ export default function AboutSection({ settings }: AboutProps) {
               className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
             {/* Ambient vignette and overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90 pointer-events-none" />
-            <div className="absolute bottom-6 left-8 pointer-events-none">
-              <span className="text-[10px] uppercase tracking-widest text-amber-500 font-semibold block">The Workspace</span>
-              <h4 className="text-white text-base font-serif uppercase tracking-wider mt-1">Royal Vista Studio Space</h4>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-90 pointer-events-none" />
+            <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-8 pointer-events-none">
+              <span className="text-[8px] sm:text-[10px] uppercase tracking-widest text-amber-500 font-semibold block">The Workspace</span>
+              <h4 className="text-[11px] sm:text-sm md:text-base text-white font-serif uppercase tracking-wider mt-0.5">Royal Vista Studio Space</h4>
             </div>
           </motion.div>
         </div>
