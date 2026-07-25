@@ -246,7 +246,7 @@ export const defaultPortfolio: PortfolioItem[] = [
     category: "Weddings",
     mediaType: "video",
     mediaUrl: "https://assets.mixkit.co/videos/preview/mixkit-groom-adjusting-his-bowtie-40892-large.mp4",
-    thumbnailUrl: "https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&q=80&w=800",
+    thumbnailUrl: "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&q=80&w=800&fp-x=0.4&fp-y=0.3&crop=focalpoint",
     description: "Energetic and rhythm-driven visual cut highlighting the joyful dance performances and luxury heritage set layouts.",
     client: "Tanya & Kabir",
     year: "2025"
@@ -257,7 +257,7 @@ export const defaultPortfolio: PortfolioItem[] = [
     category: "Weddings",
     mediaType: "video",
     mediaUrl: "https://assets.mixkit.co/videos/preview/mixkit-newlyweds-kissing-under-a-veil-40898-large.mp4",
-    thumbnailUrl: "https://images.unsplash.com/photo-1611106211397-5e6fe5092a01?auto=format&fit=crop&q=80&w=800",
+    thumbnailUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=800&fp-x=0.3&fp-y=0.2&crop=focalpoint",
     description: "Luxury slow-motion veil shots capturing intimate couple portraits amidst ancient arches and warm lighting.",
     client: "Nisha & Dev",
     year: "2024"
@@ -279,7 +279,7 @@ export const defaultPortfolio: PortfolioItem[] = [
     category: "Weddings",
     mediaType: "video",
     mediaUrl: "https://assets.mixkit.co/videos/preview/mixkit-happy-bride-laughing-40895-large.mp4",
-    thumbnailUrl: "https://images.unsplash.com/photo-1611106211090-8f3c79eb8553?auto=format&fit=crop&q=80&w=800",
+    thumbnailUrl: "https://images.unsplash.com/photo-1607190074257-dd4b7af0309f?auto=format&fit=crop&q=80&w=800&fp-x=0.5&fp-y=0.4&crop=focalpoint",
     description: "Focusing on raw laughter and authentic expressions, turning fleeting moments into timeless memories.",
     client: "Sonia & Kabir",
     year: "2025"
