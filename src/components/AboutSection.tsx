@@ -120,6 +120,7 @@ export default function AboutSection({ settings }: AboutProps) {
               src="/assets/studio.png"
               alt="Our Creative Studio Space"
               fill
+              unoptimized
               className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
             {/* Ambient vignette and overlay */}

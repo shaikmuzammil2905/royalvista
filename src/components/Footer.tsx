@@ -47,6 +47,7 @@ export default function Footer({ businessName, tagline, phone, email }: FooterPr
                 src="/assets/logo.png"
                 alt="Royal Vista Logo"
                 fill
+                unoptimized
                 className="object-contain p-1"
               />
             </div>

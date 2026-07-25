@@ -43,6 +43,7 @@ export default function Navbar({ phone, whatsapp }: NavbarProps) {
               src="/assets/logo.png"
               alt="Royal Vista Logo"
               fill
+              unoptimized
               className="object-contain p-1 scale-110 group-hover:scale-125 transition-transform duration-500 z-10"
             />
           </div>
