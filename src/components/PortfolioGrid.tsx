@@ -82,14 +82,28 @@ export default function PortfolioGrid({ portfolio }: PortfolioProps) {
                 className="group relative cursor-pointer overflow-hidden rounded-2xl border border-neutral-900 bg-neutral-950 aspect-[4/3]"
                 onClick={() => setSelectedItem(item)}
               >
-                {/* Thumbnail Image */}
-                <Image
-                  src={item.thumbnailUrl}
-                  alt={item.title}
-                  fill
-                  unoptimized
-                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                />
+                {/* Thumbnail Video Preview or Image */}
+                {item.mediaType === 'video' ? (
+                  <div className="absolute inset-0 w-full h-full overflow-hidden">
+                    <video
+                      src={item.mediaUrl}
+                      poster={item.thumbnailUrl}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    />
+                  </div>
+                ) : (
+                  <Image
+                    src={item.thumbnailUrl}
+                    alt={item.title}
+                    fill
+                    unoptimized
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                  />
+                )}
 
                 {/* Dark Vignette Hover Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/35 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300 z-1" />
