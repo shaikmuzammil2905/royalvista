@@ -68,7 +68,7 @@ export default function AboutSection({ settings }: AboutProps) {
               }}
               className="text-[10px] sm:text-xs lg:text-sm text-neutral-400 leading-relaxed font-sans font-light border-t border-neutral-900 pt-4 sm:pt-5"
             >
-              {"Royal Vista Studio features a state-of-the-art production space equipped with the latest cinema setups, editing consoles, and color-grading hardware to translate your creative concepts into high-fidelity reality.".split("").map((char, index) => (
+              {"Our state-of-the-art production space is equipped with the latest cinema setups, editing consoles, and color-grading hardware to translate your creative concepts into high-fidelity reality.".split("").map((char, index) => (
                 <motion.span
                   key={index}
                   variants={{
