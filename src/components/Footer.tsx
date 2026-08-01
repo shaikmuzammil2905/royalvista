@@ -180,9 +180,6 @@ export default function Footer({ businessName, tagline, phone, email }: FooterPr
           <Link href="/terms" className="hover:text-amber-400 transition-colors">
             Terms & Conditions
           </Link>
-          <Link href="/admin" className="hover:text-amber-400 transition-colors font-medium text-amber-500/60">
-            Admin Panel
-          </Link>
         </div>
         <button
           onClick={handleScrollToTop}
