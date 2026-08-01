@@ -246,7 +246,7 @@ export const defaultPortfolio: PortfolioItem[] = [
     category: "Motion Graphics",
     mediaType: "drive_video",
     mediaUrl: "https://drive.google.com/file/d/1_DFPnL04h1c1ZtJREaCAiGdAPJjCa2Zb/preview",
-    thumbnailUrl: "/portfolio/pcbuild-1.jpg",
+    thumbnailUrl: "/portfolio/car-ad-thumb.png",
     description: "High-octane automotive motion graphics promo detailing aerodynamic lines, neon lighting ramps, and slick transitions."
   },
 
@@ -258,7 +258,7 @@ export const defaultPortfolio: PortfolioItem[] = [
     subCategory: "Velvet",
     mediaType: "drive_video",
     mediaUrl: "https://drive.google.com/file/d/1l9B0CqXUnkHWEmieuSV75zVP4c0GL4PI/preview",
-    thumbnailUrl: "/portfolio/fashion-1.jpg",
+    thumbnailUrl: "/portfolio/velvet-opt1-thumb.png",
     description: "Cinematic commercial edit for Velvet showcasing luxurious color grading, smooth pacing, and rich detail."
   },
   {
@@ -268,7 +268,7 @@ export const defaultPortfolio: PortfolioItem[] = [
     subCategory: "Velvet",
     mediaType: "drive_video",
     mediaUrl: "https://drive.google.com/file/d/1HBtO82mfHjAoCy-rs8uCUbb42GsMGsBQ/preview",
-    thumbnailUrl: "/portfolio/fashion-2.jpg",
+    thumbnailUrl: "/portfolio/velvet-opt2-thumb.png",
     description: "Alternate high-energy edit for Velvet highlighting dynamic rhythm, sound design layerings, and sleek cuts."
   },
   {
@@ -278,7 +278,7 @@ export const defaultPortfolio: PortfolioItem[] = [
     subCategory: "iPhone 17 Pro",
     mediaType: "drive_video",
     mediaUrl: "https://drive.google.com/file/d/1OQHvvDnMOrZPu9pmu3B3iOthpBm8pMst/preview",
-    thumbnailUrl: "/portfolio/iphone-16-pro.png",
+    thumbnailUrl: "/portfolio/iphone-17-thumb.png",
     description: "Commercial edit for iPhone 17 Pro highlighting titanium craftsmanship, camera system close-ups, and sleek motion."
   },
   {
@@ -288,7 +288,7 @@ export const defaultPortfolio: PortfolioItem[] = [
     subCategory: "Home Theater",
     mediaType: "drive_video",
     mediaUrl: "https://drive.google.com/file/d/1Uo3NWvUVgukH_Ds_jiwmunULAMV-Amh6/preview",
-    thumbnailUrl: "/portfolio/house.png",
+    thumbnailUrl: "/portfolio/home-theater-1-thumb.png",
     description: "Immersive home theater acoustic and visual showcase edit with premium grading."
   },
   {
@@ -298,7 +298,7 @@ export const defaultPortfolio: PortfolioItem[] = [
     subCategory: "Home Theater",
     mediaType: "drive_video",
     mediaUrl: "https://drive.google.com/file/d/1_MAaDQYgBlBZ3UeVsnewTKL7LOhTT9CW/preview",
-    thumbnailUrl: "/portfolio/interior-1.jpg",
+    thumbnailUrl: "/portfolio/home-theater-2-thumb.png",
     description: "High-end luxury cinema room experience edit highlighting ambient lights and surround sound dynamics."
   },
   {
@@ -308,7 +308,7 @@ export const defaultPortfolio: PortfolioItem[] = [
     subCategory: "Home Theater",
     mediaType: "drive_video",
     mediaUrl: "https://drive.google.com/file/d/17TyNysCCOZqgoKZ-qT6BOAij1wVAEQGH/preview",
-    thumbnailUrl: "/portfolio/interior-2.jpg",
+    thumbnailUrl: "/portfolio/home-theater-3-thumb.png",
     description: "Full architectural & audio walkthrough edit for luxury home theater installation."
   },
   {
@@ -318,7 +318,7 @@ export const defaultPortfolio: PortfolioItem[] = [
     subCategory: "AI Brand",
     mediaType: "drive_video",
     mediaUrl: "https://drive.google.com/file/d/1yH1JND4hfH9inh_AkuefFZ7jSJRqr_Ie/preview",
-    thumbnailUrl: "/portfolio/pcbuild-2.jpg",
+    thumbnailUrl: "/portfolio/ai-brand-thumb.png",
     description: "Next-gen AI Brand promotional video featuring futuristic visual effects, kinetic typography, and tech pacing."
   },
 

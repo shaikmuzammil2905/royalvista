@@ -60,9 +60,16 @@ export default function AboutSection({ settings }: AboutProps) {
             <h3 className="text-lg sm:text-2xl lg:text-3xl font-serif text-white tracking-wider mb-4 sm:mb-6 uppercase">
               Visual Masterpieces Built to Last
             </h3>
-            <p className="text-[11px] sm:text-sm lg:text-base text-neutral-300 leading-relaxed italic font-serif font-light mb-4 sm:mb-6">
+            <p className="text-sm sm:text-lg lg:text-xl text-amber-300 font-serif italic font-medium leading-relaxed mb-4 sm:mb-6 tracking-wide drop-shadow-[0_2px_10px_rgba(245,158,11,0.25)]">
               "{settings.brandPromise}"
             </p>
+            <div className="mb-6 p-4 sm:p-5 bg-neutral-900/80 border border-amber-500/30 rounded-2xl flex flex-col gap-1.5 shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
+              <div className="text-2xl sm:text-3xl font-bold font-serif text-amber-400">4+ Years</div>
+              <div className="text-xs font-semibold font-sans uppercase tracking-wider text-amber-300">PROFESSIONAL CRAFTSMANSHIP</div>
+              <div className="text-xs sm:text-sm font-sans text-neutral-100 font-normal leading-relaxed opacity-95">
+                Preserving life's most meaningful moments and elevating brands with elegance.
+              </div>
+            </div>
             <motion.p
               initial="hidden"
               whileInView="visible"
@@ -76,7 +83,7 @@ export default function AboutSection({ settings }: AboutProps) {
                   },
                 },
               }}
-              className="text-[10px] sm:text-xs lg:text-sm text-neutral-400 leading-relaxed font-sans font-light border-t border-neutral-900 pt-4 sm:pt-5"
+              className="text-[11px] sm:text-xs lg:text-sm text-neutral-200 leading-relaxed font-sans font-normal border-t border-neutral-900 pt-4 sm:pt-5"
             >
               {"Our state-of-the-art production space is equipped with the latest cinema setups, editing consoles, and color-grading hardware to translate your creative concepts into high-fidelity reality.".split("").map((char, index) => (
                 <motion.span
