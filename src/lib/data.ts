@@ -229,6 +229,15 @@ export const defaultPortfolio: PortfolioItem[] = [
     thumbnailUrl: "/portfolio/cafe.jpg",
     description: "Warm, atmospheric 3D cafe interior rendering with custom pendant lighting, rustic wood, and cozy seating."
   },
+  {
+    id: "3d-car-exhibition",
+    title: "Car Exhibition Booth",
+    category: "3D Models",
+    mediaType: "image",
+    mediaUrl: "/portfolio/car-exhibition-booth.png",
+    thumbnailUrl: "/portfolio/car-exhibition-booth.png",
+    description: "Architectural 3D luxury car showroom & exhibition booth render with purple canopy, miniature vehicles, and lounge setup."
+  },
 
   // --- MOTION GRAPHICS ---
   {
