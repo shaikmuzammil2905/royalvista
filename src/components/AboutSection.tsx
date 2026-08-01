@@ -36,15 +36,15 @@ export default function AboutSection({ settings }: AboutProps) {
   };
 
   return (
-    <section id="about" className="relative py-24 bg-black overflow-hidden">
+    <section id="about" className="relative py-10 sm:py-24 bg-black overflow-hidden">
       {/* Background gradients */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-amber-500/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-yellow-500/5 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Brand Promise & Studio Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 mb-24 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 mb-10 sm:mb-24 items-center">
           {/* Left: Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -119,19 +119,19 @@ export default function AboutSection({ settings }: AboutProps) {
 
         {/* Why Choose Us & Core Values */}
         <div>
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 sm:mb-16">
             <span className="text-xs uppercase tracking-[0.3em] text-amber-500 font-semibold font-sans block">
               Our Foundations
             </span>
             <h3 className="text-2xl sm:text-3xl font-serif text-white tracking-widest mt-2 uppercase">
               Core Values
             </h3>
-            <p className="text-sm text-neutral-300 mt-2 max-w-lg mx-auto font-sans font-normal">
+            <p className="text-xs sm:text-sm text-neutral-300 mt-2 max-w-lg mx-auto font-sans font-normal">
               Nine rules of excellence that govern everything we create at Royal Vista Studio.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {settings.coreValues.map((value, i) => (
               <motion.div
                 key={value}

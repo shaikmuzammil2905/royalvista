@@ -20,26 +20,26 @@ export default function ServicesSection({ services }: ServicesProps) {
   };
 
   return (
-    <section id="services" className="relative py-24 bg-black overflow-hidden">
+    <section id="services" className="relative py-10 sm:py-24 bg-black overflow-hidden">
       {/* Background gradients */}
       <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-amber-500/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-yellow-500/5 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Section Title */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-8 sm:mb-20">
           <span className="text-xs uppercase tracking-[0.3em] text-amber-500 font-medium font-sans">
             Creative Disciplines
           </span>
-          <h2 className="text-3xl sm:text-5xl font-serif text-white tracking-widest mt-2 uppercase">
+          <h2 className="text-2xl sm:text-5xl font-serif text-white tracking-widest mt-2 uppercase">
             Premium Services
           </h2>
           <div className="w-12 h-[1px] bg-amber-500 mx-auto mt-4" />
         </div>
 
         {/* Services Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
           {services.map((svc, index) => (
             <motion.div
               key={svc.id}
