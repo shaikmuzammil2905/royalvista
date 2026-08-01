@@ -2,16 +2,13 @@ import { readDb } from '@/lib/db';
 import Link from 'next/link';
 import { ArrowRight, Star, Sparkles, Briefcase, PhoneCall } from 'lucide-react';
 import CinematicHero from '@/components/CinematicHero';
-import PortfolioGrid from '@/components/PortfolioGrid';
-import AboutSection from '@/components/AboutSection';
-import ServicesSection from '@/components/ServicesSection';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 export default async function Home() {
   const db = await readDb();
-  const { settings, services, portfolio } = db;
+  const { settings } = db;
 
   const quickNav = [
     {
@@ -47,16 +44,7 @@ export default async function Home() {
         <CinematicHero tagline={settings.tagline} phone={settings.phone} />
       </div>
 
-      {/* 2. Interactive Portfolio Section with Animated Popups */}
-      <PortfolioGrid portfolio={portfolio} />
-
-      {/* 3. About & Core Values Section */}
-      <AboutSection settings={settings} />
-
-      {/* 4. Services Section */}
-      <ServicesSection services={services} />
-
-      {/* 5. Quick Navigation Directory */}
+      {/* 2. Quick Navigation Directory */}
       <section className="relative py-10 sm:py-24 bg-black border-t border-neutral-900/60 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[150px] bg-amber-500/5 rounded-full blur-[80px] pointer-events-none" />
         
@@ -100,7 +88,7 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* 6. Global Call-to-Action Section */}
+      {/* 3. Global Call-to-Action Section */}
       <section className="relative py-10 sm:py-20 bg-neutral-950/20 border-t border-neutral-900/60 overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10 space-y-4 sm:space-y-6">
           <span className="text-xs uppercase tracking-[0.25em] text-amber-500 font-semibold">
