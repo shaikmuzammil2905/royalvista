@@ -235,7 +235,7 @@ export const defaultPortfolio: PortfolioItem[] = [
     category: "3D Models",
     mediaType: "image",
     mediaUrl: "/portfolio/car-exhibition-booth.png",
-    thumbnailUrl: "/portfolio/car-exhibition-booth.png",
+    thumbnailUrl: "/portfolio/car-exhibition-booth-thumb.jpg",
     description: "Architectural 3D luxury car showroom & exhibition booth render with purple canopy, miniature vehicles, and lounge setup."
   },
 
