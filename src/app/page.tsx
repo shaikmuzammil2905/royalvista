@@ -2,41 +2,42 @@ import { readDb } from '@/lib/db';
 import Link from 'next/link';
 import { ArrowRight, Star, Sparkles, Briefcase, PhoneCall } from 'lucide-react';
 import CinematicHero from '@/components/CinematicHero';
-import PortfolioGrid from '@/components/PortfolioGrid';
-import AboutSection from '@/components/AboutSection';
-import ServicesSection from '@/components/ServicesSection';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 export default async function Home() {
   const db = await readDb();
-  const { settings, services, portfolio } = db;
+  const { settings } = db;
 
   const quickNav = [
     {
-      title: "Our Promise",
-      desc: "Explore our creative brand promise, values, and studio workspace.",
-      href: "/about",
-      icon: <Star size={20} className="text-amber-400" />
-    },
-    {
-      title: "The Expertise",
-      desc: "Explore our 14 premium video editing and branding solutions.",
-      href: "/services",
-      icon: <Sparkles size={20} className="text-amber-400" />
-    },
-    {
-      title: "The Showcase",
-      desc: "Browse 3D models, motion graphics, video editing, and Photoshop works.",
+      title: "Portfolio Showcase",
+      desc: "Explore 3D Models, Motion Graphics, Video Editing, and Photoshop works with interactive animated popups.",
       href: "/portfolio",
-      icon: <Briefcase size={20} className="text-amber-400" />
+      badge: "Visual Gallery",
+      icon: <Briefcase size={22} className="text-amber-400" />
     },
     {
-      title: "The Studio",
-      desc: "Connect for custom bookings and instant quotes.",
+      title: "Our Foundations & Values",
+      desc: "Discover our 9 core values of excellence, studio workspace, and brand promise.",
+      href: "/about",
+      badge: "Brand Identity",
+      icon: <Star size={22} className="text-amber-400" />
+    },
+    {
+      title: "Services & Disciplines",
+      desc: "Explore our 14 luxury post-production, editing, and color-grading solutions.",
+      href: "/services",
+      badge: "Expertise",
+      icon: <Sparkles size={22} className="text-amber-400" />
+    },
+    {
+      title: "Studio Booking & Contact",
+      desc: "Connect directly with Royal Vista Studio for custom quotes and project bookings.",
       href: "/contact",
-      icon: <PhoneCall size={20} className="text-amber-400" />
+      badge: "Get in Touch",
+      icon: <PhoneCall size={22} className="text-amber-400" />
     }
   ];
 
@@ -47,28 +48,19 @@ export default async function Home() {
         <CinematicHero tagline={settings.tagline} phone={settings.phone} />
       </div>
 
-      {/* 2. Interactive Portfolio Showcase with Animated Popups */}
-      <PortfolioGrid portfolio={portfolio} />
-
-      {/* 3. About & Core Values Foundations */}
-      <AboutSection settings={settings} />
-
-      {/* 4. Services & Disciplines */}
-      <ServicesSection services={services} />
-
-      {/* 5. Quick Navigation Directory */}
+      {/* 2. Dedicated Page Directory Cards (Each page fits in its own separate page) */}
       <section className="relative py-10 sm:py-24 bg-black border-t border-neutral-900/60 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[150px] bg-amber-500/5 rounded-full blur-[80px] pointer-events-none" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center mb-8 sm:mb-16">
-            <span className="text-xs uppercase tracking-[0.3em] text-amber-500 font-medium font-sans">
+            <span className="text-xs uppercase tracking-[0.3em] text-amber-500 font-semibold font-sans block mb-1.5">
               Curated Experience
             </span>
-            <h2 className="text-2xl sm:text-5xl font-serif text-white tracking-widest mt-2 uppercase">
-              Explore Our Agency
+            <h2 className="text-2xl sm:text-5xl font-serif text-white tracking-widest uppercase">
+              Explore Royal Vista Studio
             </h2>
-            <div className="w-12 h-[1px] bg-amber-500 mx-auto mt-4" />
+            <div className="w-16 h-[2px] bg-amber-500 mx-auto mt-3 sm:mt-4" />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">
@@ -76,31 +68,39 @@ export default async function Home() {
               <Link
                 key={nav.href}
                 href={nav.href}
-                className="group relative bg-neutral-950/40 border border-neutral-900/60 hover:border-amber-500/20 p-6 sm:p-8 rounded-2xl transition-all duration-500 flex flex-col justify-between hover:bg-neutral-950/80 shadow-lg hover:-translate-y-1"
+                className="group relative bg-neutral-950/80 border border-neutral-800/80 hover:border-amber-500/50 p-6 sm:p-8 rounded-2xl transition-all duration-300 flex flex-col justify-between hover:bg-neutral-900/90 shadow-xl hover:-translate-y-1"
               >
                 <div>
-                  <div className="w-10 h-10 rounded-lg bg-neutral-900 border border-neutral-800 flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-amber-500/10 transition-colors">
-                    {nav.icon}
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="w-11 h-11 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center group-hover:scale-110 group-hover:bg-amber-500/20 transition-all duration-300">
+                      {nav.icon}
+                    </div>
+                    <span className="text-[10px] uppercase font-semibold tracking-widest text-amber-400 bg-black/60 px-2.5 py-1 rounded border border-amber-500/20">
+                      {nav.badge}
+                    </span>
                   </div>
-                  <h3 className="text-white text-base sm:text-lg font-serif uppercase tracking-wider mb-2 group-hover:text-amber-400 transition-colors">
+
+                  <h3 className="text-white text-base sm:text-xl font-serif font-medium uppercase tracking-wider mb-2 group-hover:text-amber-400 transition-colors">
                     {nav.title}
                   </h3>
-                  <p className="text-neutral-400 text-xs leading-relaxed mb-4 sm:mb-6 font-light font-sans">
+                  <p className="text-neutral-300 text-xs sm:text-sm leading-relaxed mb-6 font-sans font-normal opacity-90">
                     {nav.desc}
                   </p>
                 </div>
                 
-                <span className="inline-flex items-center gap-1.5 text-xs text-amber-500 uppercase tracking-widest font-semibold group-hover:text-white transition-colors">
-                  <span>Enter</span>
-                  <ArrowRight size={12} className="group-hover:translate-x-1.5 transition-transform" />
-                </span>
+                <div className="pt-4 border-t border-neutral-900 flex items-center justify-between text-xs text-amber-400 font-semibold uppercase tracking-widest group-hover:text-amber-300">
+                  <span>Open Page</span>
+                  <div className="w-7 h-7 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center group-hover:bg-amber-500 group-hover:text-black transition-all">
+                    <ArrowRight size={13} className="group-hover:translate-x-0.5 transition-transform" />
+                  </div>
+                </div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 6. Global Call-to-Action Section */}
+      {/* 3. Global Call-to-Action Section */}
       <section className="relative py-10 sm:py-20 bg-neutral-950/20 border-t border-neutral-900/60 overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10 space-y-4 sm:space-y-6">
           <span className="text-xs uppercase tracking-[0.25em] text-amber-500 font-semibold">
@@ -110,7 +110,7 @@ export default async function Home() {
             Let's Collaborate On Your Next Project
           </h3>
           <p className="text-xs sm:text-sm text-neutral-300 max-w-xl mx-auto font-sans font-normal leading-relaxed">
-            Whether it is an elegant wedding film, a high-impact commercial advertisement, or branding visual assets, our studio is ready to deliver excellence.
+            Whether it is an elegant wedding film, a high-impact commercial advertisement, 3D modeling, or branding visual assets, our studio is ready to deliver excellence.
           </p>
           <div className="pt-2 sm:pt-4">
             <Link
