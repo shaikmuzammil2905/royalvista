@@ -23,6 +23,18 @@ export default function AboutSection({ settings }: AboutProps) {
     "Continuous Growth": <RefreshCw size={20} className="text-amber-400" />
   };
 
+  const valueDescriptions: { [key: string]: string } = {
+    "Excellence": "Uncompromising commitment to top-tier quality and artistic precision in every visual project we deliver.",
+    "Creativity": "Innovative visual concepts and bespoke storytelling tailored to elevate your brand identity.",
+    "Innovation": "Utilizing cutting-edge 3D animation, AI tools, and post-production technologies to redefine visuals.",
+    "Client First": "Dedicated partnership and transparent communication centered on realizing your unique creative vision.",
+    "Integrity": "Honest workflows, realistic timelines, and reliable delivery adhering to absolute professional standards.",
+    "Quality Without Compromise": "Rigorously crafted frame-by-frame visual perfection without shortcuts, ensuring lasting impressions.",
+    "Passion": "Genuine artistic drive and enthusiasm infused into every animation, color grade, and frame edit.",
+    "Commitment": "Relentless focus on exceeding client expectations and meeting production deadlines every single time.",
+    "Continuous Growth": "Constant evolution of techniques, software expertise, and visual trends to remain ahead of industry standards."
+  };
+
   return (
     <section id="about" className="relative py-24 bg-black overflow-hidden">
       {/* Background gradients */}
@@ -31,8 +43,6 @@ export default function AboutSection({ settings }: AboutProps) {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
-
-
         {/* Brand Promise & Studio Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 mb-24 items-center">
           {/* Left: Text Content */}
@@ -116,7 +126,7 @@ export default function AboutSection({ settings }: AboutProps) {
             <h3 className="text-2xl sm:text-3xl font-serif text-white tracking-widest mt-2 uppercase">
               Core Values
             </h3>
-            <p className="text-xs text-neutral-400 mt-2 max-w-sm mx-auto font-sans font-light">
+            <p className="text-sm text-neutral-300 mt-2 max-w-lg mx-auto font-sans font-normal">
               Nine rules of excellence that govern everything we create at Royal Vista Studio.
             </p>
           </div>
@@ -128,18 +138,18 @@ export default function AboutSection({ settings }: AboutProps) {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="group p-6 bg-neutral-950/20 border border-neutral-900 hover:border-amber-500/20 hover:bg-neutral-950/60 rounded-xl transition-all duration-300 flex items-start gap-4"
+                transition={{ duration: 0.5, delay: i * 0.08 }}
+                className="group p-6 sm:p-7 bg-neutral-900/50 border border-neutral-800/80 hover:border-amber-500/50 hover:bg-neutral-900/90 rounded-2xl transition-all duration-300 flex items-start gap-4 shadow-lg hover:shadow-[0_10px_30px_rgba(245,158,11,0.08)]"
               >
-                <div className="w-10 h-10 rounded-lg bg-neutral-900/60 border border-neutral-800 flex items-center justify-center group-hover:bg-amber-500/10 group-hover:border-amber-500/30 transition-all duration-300 shrink-0 mt-0.5">
-                  {iconMap[value] || <Award size={20} className="text-amber-400" />}
+                <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center group-hover:scale-110 group-hover:bg-amber-500/20 group-hover:border-amber-400 transition-all duration-300 shrink-0 mt-0.5 shadow-[0_0_15px_rgba(245,158,11,0.15)]">
+                  {iconMap[value] || <Award size={22} className="text-amber-400" />}
                 </div>
                 <div>
-                  <h4 className="text-white text-base font-semibold font-serif uppercase tracking-wider group-hover:text-amber-400 transition-colors">
+                  <h4 className="text-white text-base sm:text-lg font-semibold font-serif uppercase tracking-wider group-hover:text-amber-400 transition-colors">
                     {value}
                   </h4>
-                  <p className="text-neutral-300 text-sm mt-1 leading-relaxed font-sans font-normal">
-                    Exquisite craftsmanship delivered with precision and honesty.
+                  <p className="text-neutral-200 text-xs sm:text-sm mt-2 leading-relaxed font-sans font-normal opacity-90">
+                    {valueDescriptions[value] || "Exquisite craftsmanship delivered with precision and honesty."}
                   </p>
                 </div>
               </motion.div>

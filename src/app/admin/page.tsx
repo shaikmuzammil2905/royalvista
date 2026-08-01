@@ -489,7 +489,7 @@ export default function AdminDashboard() {
                       <h3 className="text-white text-sm font-serif uppercase tracking-wider truncate">{item.title}</h3>
                       <p className="text-neutral-500 text-xs line-clamp-2">{item.description}</p>
                       <div className="text-[10px] text-neutral-600 uppercase tracking-wider">
-                        Client: {item.client} | {item.year}
+                        Category: {item.category} {item.subCategory ? `| ${item.subCategory}` : ''}
                       </div>
                     </div>
                     <div className="flex border-t border-neutral-900 text-xs">
@@ -931,25 +931,15 @@ export default function AdminDashboard() {
                       className="bg-neutral-900 border border-neutral-800 rounded-lg p-2.5 text-white"
                     />
                   </div>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="flex flex-col gap-1.5">
-                      <label className="text-neutral-400">Client</label>
-                      <input
-                        type="text"
-                        value={editingItem.client}
-                        onChange={(e) => setEditingItem({ ...editingItem, client: e.target.value })}
-                        className="bg-neutral-900 border border-neutral-800 rounded-lg p-2.5 text-white"
-                      />
-                    </div>
-                    <div className="flex flex-col gap-1.5">
-                      <label className="text-neutral-400">Year</label>
-                      <input
-                        type="text"
-                        value={editingItem.year}
-                        onChange={(e) => setEditingItem({ ...editingItem, year: e.target.value })}
-                        className="bg-neutral-900 border border-neutral-800 rounded-lg p-2.5 text-white"
-                      />
-                    </div>
+                  <div className="flex flex-col gap-1.5">
+                    <label className="text-neutral-400">Sub-Category (Optional)</label>
+                    <input
+                      type="text"
+                      value={editingItem.subCategory || ''}
+                      onChange={(e) => setEditingItem({ ...editingItem, subCategory: e.target.value })}
+                      className="bg-neutral-900 border border-neutral-800 rounded-lg p-2.5 text-white"
+                      placeholder="e.g. Velvet, Interior, PC Build, Fashion"
+                    />
                   </div>
                   <div className="flex flex-col gap-1.5">
                     <label className="text-neutral-400">Project Description</label>
